@@ -201,7 +201,7 @@ private fun createModule(context: Context, version: Int): String {
         createCustomize(buildPath)
         Utils.copyAssetsFile2AnyWhere(context, "update-binary", "$buildPath/META-INF/com/google/android")
         Utils.copyAssetsFile2AnyWhere(context, "updater-script", "$buildPath/META-INF/com/google/android")
-        Utils.copyAssetsFile2AnyWhere(context, "OplusMultiApp.apk", "$buildPath/system/system_ext/app")
+        Utils.copyAssetsFile2AnyWhere(context, "OplusMultiApp.apk", "$buildPath/system/system_ext/app/OplusMultiApp")
         Utils.copyAssetsFile2AnyWhere(context, "OplusMultiApp.odex", "$buildPath/system/system_ext/app/OplusMultiApp/oat/arm64")
         Utils.copyAssetsFile2AnyWhere(context, "OplusMultiApp.vdex", "$buildPath/system/system_ext/app/OplusMultiApp/oat/arm64")
         Utils.zipDir(buildPath, "${context.externalCacheDir}/多开模块V$version.zip")
